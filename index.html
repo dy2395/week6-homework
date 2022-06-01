@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+  </head>
+  <body class="min-100-vh flex-column">
+    <header class="flex-row p-5 justify-center text-white bg-primary">
+      <h1>Weather Dashboard</h1>
+    </header>
+      
+      
+    <main class="container">
+      <div class="flex-row justify-space-between">
+        <div class="col-12 col-md-4">
+            <div class="card">
+              <h3 class="card-header">Search for a City</h3>
+              <div class="input-group mb-3">
+                <input id="cityname" type="text" autofocus="true" class="form-control" placeholder="NEW YORK"/>
+                <button type="button" class="btn" id="searchbutton">Search</button>
+              </div>
+            </div>
+            <div class="list-group"></div>
+        </div>    
+        <div class="col-12 col-md-8">
+                <div class="card-2">
+                    <div class="cardbody"></div>
+                </div>
+                <div class="card-2">
+                    <h3 class="card-header">5-Day Forcast:</h3>
+            
+                    <div id="forecast-card" class="flex-row">
+                    <!-- <div id="next-day" class="col-md-2"></div>
+                    <div id="the-day-after-next" class="col-md-2"></div>
+                    <div id="three-days-from-now" class="col-md-2"></div>
+                    <div id="four-days-from-now" class="col-md-2"></div>
+                    <div id="five-days-from-now" class="col-md-2"></div> -->
+                    </div>
+                </div>    
+            </div>
+        </div>
+      </div>  
+    </main>
+      
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="./assets/script.js"></script>
+
+  </body>
+</html>
